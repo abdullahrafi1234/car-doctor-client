@@ -23,8 +23,7 @@ const Services = () => {
                 <p>the majority have suffered alteration in some form, by injected humour, or randomised <br /> words which do not look even slightly believable. </p>
             </div>
             <div>
-                <p>services {services.length}</p>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-8">
                     {
                         services.map(service => <ServiceCard key={service._id} service={service}></ServiceCard>)
                     }
